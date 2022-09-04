@@ -14,3 +14,16 @@
       name: apache2
       state: started
     when: ansible_os_family=="Debian"
+
+  - name: I want to install apache2
+    yum:
+      name: httpd
+      state: present
+    when: ansible_os_family=="Red hat"
+
+  - name: I want to install apache2
+    service:
+      name: httpd
+      state: present
+    when: ansible_os_family=="Red hat"   
+

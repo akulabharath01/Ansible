@@ -15,3 +15,7 @@
   - name: Including task and creating file
     include_tasks: myfile.yml
         
+  - name: copay content from other file
+    copy:
+      src: mytextfile.txt
+      dest: /home/ubuntu/myfile3    

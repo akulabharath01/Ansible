@@ -6,11 +6,11 @@
   - name: i want to install java on ubuntu
     apt:
       name: "{{installonubuntu}}"
-      status: present
+      state: present
     when: ansible_os_family=="Debian"  
 
   - name: i want to install java on RedHat
     yum:
      name: "{{installonredhat}}"
-     status: present
+     state: present
     when: ansible_os_family=="RedHat"

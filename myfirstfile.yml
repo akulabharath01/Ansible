@@ -11,3 +11,7 @@
     file:
       path: /home/ubuntu/myfolder1
       state: directory  
+
+  - name: Including task and creating file
+    include_tasks: myfile.yml
+        

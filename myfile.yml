@@ -1,0 +1,6 @@
+---
+tasks:
+  - name: creating file
+    file:
+      path: /home/ubuntu/myfile2
+      state: touch

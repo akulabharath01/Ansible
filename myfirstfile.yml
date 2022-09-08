@@ -6,3 +6,8 @@
     file:
       path: /home/ubuntu/myfile1
       state: touch
+
+  - name: creating folder
+    file:
+      path: /home/ubuntu/myfolder1
+      state: directory  

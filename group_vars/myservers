@@ -1,5 +1,5 @@
 ---
 installonubuntu: apache2
 installonredhat: httpd
-javapackonubuntu: openjdk-8-jre
-javapackonredhat: java-1.8.0-openjdk
+myjavapackonubuntu: openjdk-8-jre
+myjavapackonredhat: java-1.8.0-openjdk

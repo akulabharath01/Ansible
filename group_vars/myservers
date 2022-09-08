@@ -1,0 +1,3 @@
+---
+installonubuntu=Apache2
+installonredhat=httpd

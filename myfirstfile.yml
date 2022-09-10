@@ -19,3 +19,8 @@
     copy:
       src: mytextfile.txt
       dest: /home/ubuntu/myfile3    
+
+  - name: dynamic file content copy
+    template:
+      src: myindex.j2
+      dest: /var/www/html/index.html

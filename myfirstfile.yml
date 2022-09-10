@@ -31,3 +31,11 @@
     template:
       src: myindex.j2
       dest: /var/www/html/index.html
+    notify: restartapache2
+
+  handlers:
+  - name: restartapache2
+    service:
+      name: apache2
+      state: restarted
+

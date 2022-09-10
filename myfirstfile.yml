@@ -22,8 +22,8 @@
 
   - name: Download remote file(Internet File)
     get_url:
-      src: https://maha22aug22.s3.us-east-2.amazonaws.com/mahaLogin.war
-      dest: /home/ubuntu/mahaLogin.war
+      src: https://github.com/maha4ntvc/myansible_NT_E_7_01sep22/blob/main/mystudents.yml
+      dest: /home/ubuntu/mystudents.yml
       force_basic_auth: yes  
 
   - name: dynamic file content copy

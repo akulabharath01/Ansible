@@ -20,6 +20,12 @@
       src: mytextfile.txt
       dest: /home/ubuntu/myfile3    
 
+  - name: Download remote file(Internet File)
+    get_url:
+      src: https://maha22aug22.s3.us-east-2.amazonaws.com/mahaLogin.war
+      dest: /home/ubuntu/mahaLogin.war
+      force_basic_auth: yes  
+
   - name: dynamic file content copy
     template:
       src: myindex.j2

@@ -15,7 +15,7 @@
   - name: Including task and creating file
     include_tasks: myfile.yml
         
-  - name: copay content from other file
+  - name: copy content from other file
     copy:
       src: mytextfile.txt
       dest: /home/ubuntu/myfile3    
@@ -25,6 +25,7 @@
       src: https://github.com/maha4ntvc/myansible_NT_E_7_01sep22/blob/main/mystudents.yml
       dest: /home/ubuntu/mystudents.yml
       force_basic_auth: yes  
+    ignore_errors: yes 
 
   - name: dynamic file content copy
     template:

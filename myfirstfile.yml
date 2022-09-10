@@ -24,7 +24,7 @@
     get_url:
       src: https://github.com/maha4ntvc/myansible_NT_E_7_01sep22/blob/main/mystudents.yml
       dest: /home/ubuntu/mystudents.yml
-    force_basic_auth: yes  
+      force_basic_auth: yes  
 
   - name: dynamic file content copy
     template:
